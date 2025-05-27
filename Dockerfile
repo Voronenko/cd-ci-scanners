@@ -1,6 +1,6 @@
 FROM node:18.15.0
 
-RUN apt update -yq && apt install -yq python3-pip && \
+RUN apt update -yq && apt install -yq python3-pip git git-lfs && \
     pip install --no-input semgrep
 
 RUN  npm install -g snyk &&  \
